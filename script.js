@@ -24,7 +24,7 @@ cells.forEach(cell=>{
 			cell.textContent="x";
 			if(checkWin()){
 				messageDiv.textContent=`${player1}, congratulations you won!`;
-				gameActive=flase;
+				gameActive=false;
 				return;
 			}
 			currentPlayer=2;
@@ -34,7 +34,7 @@ cells.forEach(cell=>{
 			cell.textContent="o";
 			if(checkWin()){
 				messageDiv.textContent=`${player2}, congratulations you won!`;
-				gameActive=flase;
+				gameActive=false;
 				return;
 		}
 	});
